@@ -14,7 +14,7 @@ import org.junit.Assert.*
  * See [testing documentation](http://d.android.com/tools/testing).
  */
 @RunWith(AndroidJUnit4::class)
-class ExampleInstrumentedTest {
+class ExampleInstrumentedTest {//안드로이드 프레임워크를 가지고 테스트
     @Test
     fun useAppContext() {
         // Context of the app under test.

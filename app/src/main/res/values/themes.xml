@@ -1,4 +1,8 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!--앱에 대한 전반적인 테마, 메인컬러는 무엇을 사용할 것인지 등등 -->
+    <!--    안드로이드 자체에서 다크/라이트 모드를 설정할 수 있기 때문에 안드로이드 앱에도 구분필요-->
+
     <!-- Base application theme. -->
     <style name="Base.Theme.HelloWorldApp" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
