@@ -12,12 +12,15 @@ class MainActivity : AppCompatActivity() { //MainActivity -> AppCompatActivity -
         //R : 모든 리소스를 식별할 수 있는 변수가 정의됨 ex)리소스의 색, 리소스의 문자열 등등
         //R.color 로 해당 리소스의 색에 접근할 수 있다는 의미
 
+
+        //2-1) 액티비티 끼리의 화면 전환
         settingButton()
 
 
     }
 
-
+    
+    //2-1) 액티비티 끼리의 화면 전환 : 버튼을 이용해서 main -> subActivity로 이동하기
     fun settingButton(){
         val button = findViewById<Button>(R.id.button)
         button.setOnClickListener{
