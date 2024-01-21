@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<!--    제약 추가된 곳은 파란색 동그라미로 표현됨 UI창에-->
+<!--    margin은 제약을 준 쪽으로만 줄 수 있음!-->
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="100dp"
+        android:text="button 1"
+        />
+
+
+<!--    내 뷰의 top방향을 button1의 bottom방향에 맞춰서 제약을 주겠다-->
+    <Button
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="테스트 뷰 입니다."
+        app:layout_constraintTop_toBottomOf="@+id/button1"
+        app:layout_constraintStart_toEndOf="@+id/button1"
+        />
+
+
+<!--    수직/수평방향 위아래를 전부 제약을 추가한 경우 : 해당 방향으로 중앙정렬-->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="button2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
