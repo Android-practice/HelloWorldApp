@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() { //MainActivity -> AppCompatActivity -
 
     }
 
-    
+
     //2-1) 액티비티 끼리의 화면 전환 : 버튼을 이용해서 main -> subActivity로 이동하기
     fun settingButton(){
         val button = findViewById<Button>(R.id.button)
