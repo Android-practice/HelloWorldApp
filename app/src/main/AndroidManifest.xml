@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--앱과 관련된 기본적인 설정이 들어 있는 파일-->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <!--    앱에 관련된 정보 : 앱이름, 로고 등등 -->
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -15,12 +13,17 @@
         android:theme="@style/Theme.HelloWorldApp"
         tools:targetApi="31">
 
-        <!--        앱에서 사용할 액티비티를 등록,선언-->
-        <!--        - 서비스,콘텐츠 제공자, 브로드 캐스트 리시버 사용시에도 선언 -->
-        <!--        - 핸드폰에서 쓸 수 있는 권한 관리-->
+<!--        sub activity 를 추가하면 자동으로 추가됨-->
+        <activity
+            android:name=".SubActivity"
+            android:exported="false" />
+        <!-- 앱에서 사용할 액티비티를 등록,선언 -->
+        <!-- - 서비스,콘텐츠 제공자, 브로드 캐스트 리시버 사용시에도 선언 -->
+        <!-- - 핸드폰에서 쓸 수 있는 권한 관리 -->
         <activity
             android:name=".MainActivity"
             android:exported="true">
+<!--            intent-filter : 앱을 켰을때 가장 먼저 보이는 액티비티를 지정하는 태그-->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
