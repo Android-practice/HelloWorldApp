@@ -32,11 +32,11 @@
             android:exported="true">
 
             <!-- intent-filter : 앱을 켰을때 가장 먼저 보이는 액티비티를 지정하는 태그 -->
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
         </activity>
     </application>
 
