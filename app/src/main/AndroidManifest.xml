@@ -13,7 +13,7 @@
         android:theme="@style/Theme.HelloWorldApp"
         tools:targetApi="31">
         <activity
-            android:name=".TwoColorActivity"
+            android:name=".ViewPracticeActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,7 +21,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <!-- sub activity 를 추가하면 자동으로 추가됨 -->
+        <activity
+            android:name=".TwoColorActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- sub activity 를 추가하면 자동으로 추가됨 -->
         <activity
             android:name=".SubActivity"
             android:exported="false" /> <!-- 앱에서 사용할 액티비티를 등록,선언 -->
@@ -32,11 +40,12 @@
             android:exported="true">
 
             <!-- intent-filter : 앱을 켰을때 가장 먼저 보이는 액티비티를 지정하는 태그 -->
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
 
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
     </application>
 
